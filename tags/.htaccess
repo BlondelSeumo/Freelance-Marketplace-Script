@@ -1,0 +1,25 @@
+RewriteEngine On
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^([\s\S]+)$ tag.php?tag=$1&%{QUERY_STRING}
+
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Now, rewrite to HTTPS if www present:
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

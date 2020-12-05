@@ -1,0 +1,12 @@
+{
+  "id":"f3621dc5-7793-4cdb-9a4a-242e048542db",
+  "sessionId":"2_MX44NTQ1MTF-fjE0NzI0MzU2MDUyMjN-eVgwNFJhZmR6MjdockFHanpxNzBXaEFXfn4",
+  "projectId":854511,
+  "createdAt":1472445034077,
+  "broadcastUrls":{
+    "hls":"https://cdn-broadcast001-dub.tokbox.com/29932/29932_f3621dc5-7793-4cdb-9a4a-242e048542db.smil/playlist.m3u8"
+  },
+  "updatedAt":1472445034077,
+  "status":"started",
+  "partnerId":854511
+}

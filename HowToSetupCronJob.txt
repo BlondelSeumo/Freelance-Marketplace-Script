@@ -1,0 +1,28 @@
+
+You need to set this up.
+
+Please watch this video for a step-by-step guide on how to set this up
+
+https://youtu.be/H0fFAf9IYp0
+
+
+Cronjon:
+
+// 1 Day Cron Job
+payouts_and_offers_cron.php
+/usr/bin/wget -q -O - https://www.{Your path}/payouts_and_offers_cron > /dev/null 2>&1
+
+// Month - 30 Day Cron Job
+view_earnings_cron.php
+/usr/bin/wget -q -O - https://www.{Your path}/view_earnings_cron > /dev/null 2>&1
+
+——————————
+
+Please also make sure to join our support and collaboration Facebook group:
+https://www.facebook.com/groups/507827453287653/
+
+
+Regards,
+Pixinal Studio
+
+(www.pixinal.com)

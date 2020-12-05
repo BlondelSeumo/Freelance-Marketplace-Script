@@ -1,0 +1,259 @@
+/*
+
+Purpose: Styles for categories_nav.php
+
+*/
+
+.mp-box.mp-box-white.notop {
+	
+border-top:0;
+
+margin-top:54px;
+    
+    
+	
+}
+
+.stickytop .main-cat-list > li { 
+
+line-height:25px;
+
+position: relative;
+    
+top: -2.7px !important;
+
+}
+
+
+.mp-box.mp-box-white {
+	
+background:#fff;
+min-height:37px;
+border-top:1px #dddddd solid;
+border-bottom:1px #dddddd solid;
+	
+}
+
+
+.mp-box {
+	
+background:#f7f7f7;
+
+margin:0 auto;
+
+position: relative;
+	
+}
+
+
+.mp-box .box-row {
+	
+width:1308px;
+
+margin:0 auto;
+
+position:relative;
+	
+box-sizing:border-box;
+	
+}
+
+.main-cat-list.active {
+	
+opacity:1;
+	
+}
+
+
+.main-cat-list {
+	
+	position: relative;
+	margin: 6px -12px 0 -12px;
+	opacity:1;
+}
+
+
+.main-cat-list > li {
+margin-top: 1px;	
+list-style:none;
+height:29px;
+line-height:25px;	
+color:#303030;
+white-space:nowrap;
+position:relative;
+cursor:default;
+float:left;
+border:1px transparent solid;
+border-radius: 3px 3px 0 0;
+padding-top: 2.8px;
+
+}
+
+.main-cat-list > li > a {
+	
+display: inline-block;
+
+padding:0 10px;
+
+
+	
+}
+
+.main-cat-list > li > a:hover {
+    
+    border-bottom: 3px solid #28a745 !important;
+}
+
+
+.main-cat-list > li .menu-cont {
+	
+background-color:#fff;
+
+position: absolute;
+
+left:-1px;
+
+z-index:10;
+
+display:none;	
+	
+width:0;
+
+border:1px #dddddd solid;
+
+box-sizing:border-box;
+
+padding: 15px 0;
+
+border-radius: 0 3px 3px 3px;
+	
+}
+
+.main-cat-list > li .menu-cont ul {
+	
+display:inline-block;
+
+vertical-align:top;
+
+padding:0 11px;
+
+box-sizing:border-box;
+
+
+	
+}
+
+.main-cat-list > li .menu-cont ul:first-child {
+	
+	border-right: 1px #dddddd solid;
+	
+}
+
+
+.main-cat-list > li .menu-cont li {
+	
+line-height: 16px;
+
+display:block;
+
+white-space:nowrap;
+	
+text-align:left;
+
+max-width: 240px;	
+
+overflow: hidden;
+	
+}
+
+.main-cat-list > li .menu-cont li:first-child a {
+	
+	padding-top:0;
+	
+	
+}
+
+.main-cat-list > li .menu-cont li a {
+	
+color: #00698c;
+
+display:block;
+	
+padding:10px 15px 0 0;
+
+overflow:hidden;
+
+white-space: nowrap;
+
+text-overflow: ellipsis;
+
+	
+}
+
+.main-cat-list > li .menu-cont li a:hover {
+	
+	text-decoration:underline;
+	
+}
+
+
+.main-cat-list > li a {
+	
+font-weight:400;
+
+color:#555555;
+	
+}
+
+.main-cat-list > li a:hover {
+	
+	text-decoration:none;
+	
+}
+
+
+.main-cat-list > li:hover,
+.main-cat-list > li:active {
+	
+border:1px #dddddd solid;
+
+color: #00698c;
+
+box-shadow : 0 1px 3px 0 #dddddd;
+
+
+}
+
+
+.main-cat-list > li:hover > a {
+	
+	color:#00698c;
+	
+}
+
+
+
+.main-cat-list > li:hover .menu-cont {
+	
+	display:block;
+	
+	width:auto;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

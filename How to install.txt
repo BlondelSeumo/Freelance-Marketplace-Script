@@ -1,0 +1,124 @@
+Install Script Guide (text)
+
+    1. At this point, you must have extracted the contents of the folder downloaded.
+
+    2. Next to the documentation folder is a GigToDo.zip folder. That is the folder we will upload into our server.
+
+    3. Head over to your server and create a new MySQL database and a new MySQL user. Give all the newly created database priviledges to the newly created MySQL user.
+
+    4. Once step 3 is completed, head over to your file manager section.
+
+    5. Upload the GigToDo.zip into the root of your domain in the file manager section
+
+    6. Extract the files
+
+    7. Open a new tab on your browser and type in the domain name.
+
+    8. At this point, you should now see the installation script.
+
+    9. Fill in the fields with the info you created earlier.
+
+    10. Congrats! 
+
+
+
+
+
+
+Notes : Regarding the Cronjon,
+
+// 1 Day Cron Job
+
+payouts_and_offers_cron.php
+
+/usr/bin/wget -q -O - https://www.{Your path}/payouts_and_offers_cron > /dev/null 2>&1
+
+// Month - 30 Day Cron Job
+
+view_earnings_cron.php
+
+/usr/bin/wget -q -O - https://www.{Your path}/view_earnings_cron > /dev/null 2>&1 
+
+
+
+
+
+How to get Facebook Login Api (optional feature)
+
+    1. First Login To Facebook.
+
+    2. Go to https://developers.facebook.com/apps/ .
+
+    3. Add a new app.
+
+    4. Click setting dropwdown menu and open "basic".
+
+    5. Paste your website url in apps domains field
+
+    6. Must provide a valid privacy policy url in privacy policy url Feild
+
+    7. Click on "add platform" and select "website"
+
+    8. Give your website url in the given field and click on save changes
+
+    Note: Make sure your app is live
+
+    9. Copy the app id and app secret and paste in the admin panel general settings section, in their respective fields.
+
+    If after all this you still get an error, you will have to do the following additional steps:
+
+    10. Go back to https://developers.facebook.com/apps/ and choose your app.
+
+    11. Click the dropdown on facebook login and choose settings.
+
+    12. Make sure "Embedded Browser OAuth Login" is set to yes
+
+    13. Add the following in the Valid OAuth Redirect URLs text box: https://yourWebsite.com/fb-callback.php. If that doesn't work, edit the URL to https://yourWebsite.com/fb-callback (without the ".php") and try again.
+
+    Note: if your domain name includes "https or www" include that in number 13.
+
+How to get currency API
+
+    1. Go to free.currencyconverterapi.com
+
+    2. Click on "Get Your Free API Key"
+
+    3. Enter your email and authenticate with the google recaptcha on the next screen, then click on "Get Your Free API Key".
+
+    4. This will send you an email with your free Currency API Key. If you want better and faster results, you can of course purchase paid. However, free works fine most of the time.
+
+    5. In your email, you will see text like this: "Before you can use the API key, you need to verify your email. Click here to verify" So please go ahead and verify your email. API won't work unless you do this step. 6. Copy your API key in your email and head to Admin panel => Settings => Api Settings
+
+    7. In API settings screen, scroll down to Currency Settings Setting and do the following:
+
+    8. Set Enable Currency Converter to "Yes", Enter your API key in the next field and enter your prefered country currency code. You can get the code from Here. What your are copying is under the "Code" column.
+
+    9. In there server URL section, add this URL if your get the free API https://free.currconv.com.
+
+    NOTE: The free plan is for testing purposes and is subject to downtimes. For production and live software, please consider going for the paid plans.
+
+How to get Google Login Api (optional feature)
+
+    1. First login into Google.
+
+    2. Go to https://console.developers.google.com/projectselector/apis/library .
+
+    3. Create Project.
+
+    4. Click on the menu icon on the top left corner and hover your mouse on APIs & Services.
+
+    5. Click on library
+
+    6. In the library screen, search for "google plus api" and choose the first option and enable it.
+
+    7. On the left section of your screen, click on credentials then click on OAuth consent screen tab. Fill in the info and hit save.
+
+    5. Click back on credentials and create credentials.
+
+    6. Choose OAuth Consent Screen and product name which is on the second field.
+
+    7. Go back to the credetials screen and click on create credentials and choose OAuth Client ID.
+
+    8. Select the web application option and give it a redirect url (at this momment, this is the second option) this way http://yourwebsite.com/g-callback.php and click on create. If that doesn't work, try http://yourwebsite.com/g-callback (without the ".php")
+
+    9. Finally, you will receive the OAuth client ID and client secret. Paste these in the admin panel's genral settings section, in their respective fields.

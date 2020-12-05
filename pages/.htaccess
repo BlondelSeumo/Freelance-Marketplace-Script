@@ -1,0 +1,13 @@
+RewriteEngine On
+Options -Indexes
+
+RewriteRule ^([\S\s]+)/?$ index.php?slug=$1 [QSA,L]
+
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [NC,L]
+
+#Now, rewrite to HTTPS:
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [NC,L]

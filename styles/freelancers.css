@@ -1,0 +1,130 @@
+body{
+  background: #f9f9fd !important;
+}
+
+.freelancerBox {
+  min-height: 200px;
+  font-size:14px;
+}
+
+.freelancerBox .online{
+  color:#28a745;
+}
+
+.freelancerBox:hover{
+  -webkit-box-shadow:10px 14px 20px 0 rgba(0,0,0,0.25);
+  box-shadow:10px 14px 20px 0 rgba(0,0,0,0.25);
+}
+
+.freelancerBox a:hover{
+  color:black;
+}
+
+.freelancerBox .request-img {
+margin-top:10px;
+width:50px;
+height:50px;
+}
+
+.freelancerBox .request-description {
+margin-left:120px;
+margin-top:-126px;
+padding:7px 10px;
+font-size:14px;
+}
+
+.freelancerBox .text-primary {
+font-size:1.25rem;
+}
+
+.freelancerBox .lead {
+  font-size:15px;
+  font-weight:400;
+}
+
+.freelancerBox .tagline{
+  margin-bottom:10px;
+  /*font-size: 14px;*/
+  list-style:none;
+}
+
+.freelancerBox .tagline li{
+  /*display:inline-block;*/
+  margin-right:5px;
+}
+
+.freelancerBox .skills button{
+  font-size:13px;
+  margin-right: 4px;
+  font-weight:500;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.freelancerBox .skills button:hover{
+  background-color: #f8f9fa;
+}
+
+/* Seller Level Badge Styles */
+
+figure {
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.wt-userlistingimg {
+  width: auto;
+  float: left;
+  border-radius: 4px;
+  max-height: 100px;
+  max-width: 100px;
+  margin: 0 30px 21px 0
+}
+
+.wt-userlistingimg img {
+  width: 100%;
+  display: block;
+}
+
+.wt-userdropdown {
+  bottom: -6px;
+  right: -12px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Seller Rating */
+.freelancerBox .star-rating{
+  text-align: right;
+}
+
+.freelancerBox .star-rating i{
+  font-size: 18px;
+  color: #fdd003;
+}
+
+@media (max-width: 991.98px) {
+  #chatBtn{
+    display: none;
+  }
+  .wt-userlistingimg {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .freelancerBox .request-description {
+    text-align: center;
+    margin-left:0px;
+    margin-top:20px !important;
+    padding:0px; 
+  }
+  .star-rating{
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+  .star-rating h4{
+    display: inline;
+  }
+}

@@ -1,0 +1,231 @@
+
+.mp-box.mp-box-white.notop {
+	
+margin-top:-1px;
+border-bottom: 1px solid #dddd;
+	
+}
+
+
+.stickytop .main-cat-list > li { 
+
+line-height:24px;
+
+}
+
+.stickytop .main-cat-list > li .menu-cont {
+	
+top: 100%;	
+		
+}
+
+.mp-box.mp-box-white {
+	
+background:#fff;
+min-height:40px;
+	
+}
+
+
+.mp-box {
+	
+background:#f7f7f7;
+
+margin:0 auto;
+
+position: relative;
+	
+}
+
+
+.mp-box .box-row {
+	
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+	
+box-sizing:border-box;
+	
+}
+
+.main-cat-list.active {
+	
+opacity:1;
+	
+}
+
+
+.main-cat-list {
+	
+	position: relative;
+	margin: 2px -12px 0 -12px;
+	opacity:1;
+}
+
+
+.main-cat-list > li {
+	
+list-style:none;
+height:30px;
+margin-left:10px;
+font-size:15px;
+line-height:38px;	
+color:#303030;
+white-space:nowrap;
+position:relative;
+cursor:default;
+float:left;
+border:1px transparent solid;
+border-radius: 3px 3px 0 0;
+
+}
+
+.main-cat-list > li > a {
+	
+display: inline-block;
+
+padding:0 10px;
+
+
+	
+}
+
+
+.main-cat-list > li .menu-cont {
+	
+background-color:#fff;
+
+position: absolute;
+
+left:-1px;
+
+z-index:2000;
+
+top:120%;
+
+display:none;	
+	
+width:0;
+
+border:1px #dddddd solid;
+
+box-sizing:border-box;
+
+padding: 15px 0;
+
+border-radius: 0 3px 3px 3px;
+	
+}
+
+.main-cat-list > li .menu-cont ul {
+	
+display:inline-block;
+
+vertical-align:top;
+
+padding:0 11px;
+
+box-sizing:border-box;
+
+
+	
+}
+
+
+
+.main-cat-list > li .menu-cont li {
+	
+line-height: 16px;
+
+display:block;
+
+white-space:nowrap;
+	
+text-align:left;
+
+max-width: 240px;	
+
+overflow: hidden;
+	
+}
+
+.main-cat-list > li .menu-cont li:first-child a {
+	
+	padding-top:0;
+	
+}
+
+.main-cat-list > li .menu-cont li a {
+	
+color: #00698c;
+
+display:block;
+	
+padding:10px 15px 0 0;
+
+overflow:hidden;
+
+white-space: nowrap;
+
+text-overflow: ellipsis;
+
+	
+}
+
+.main-cat-list > li .menu-cont li a:hover {
+	
+	text-decoration:underline;
+	
+}
+
+
+.main-cat-list > li a {
+	
+font-weight:400;
+
+color:#555555;
+	
+}
+
+.main-cat-list > li a:hover {
+	
+	text-decoration:none;
+	
+}
+
+
+
+.main-cat-list > li:hover > a {
+	
+	color:#00698c;
+	
+}
+
+
+
+.main-cat-list > li:hover .menu-cont {
+	
+	display:block;
+	
+	width:auto;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

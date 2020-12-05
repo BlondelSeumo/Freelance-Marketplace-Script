@@ -1,0 +1,63 @@
+.header{
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/doc.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/doc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-repeat: no-repeat;
+}
+
+
+.input-group-append.move-icon-up {
+
+    position: relative;
+    top: 0px;
+}
+
+
+inbox[type=text]{
+
+    padding: 2px;
+    border-radius: 2px;
+
+}
+
+.reduceForm{
+
+    width: 60% !important;
+    margin: 0 auto;
+
+}
+
+.logo {
+
+    font-weight: bold;
+    font-weight:bolder;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .reduceForm {
+
+        position: relative;
+        top: -20px;
+
+
+    }
+
+    h2{
+
+        font-size: 110%;
+    }
+
+    h4{
+
+        font-size: 110%;
+    }
+
+    .reduceForm{
+
+        width: 80%;
+    }
+}

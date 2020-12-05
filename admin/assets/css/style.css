@@ -1,0 +1,378 @@
+/*
+
+Template : Gigtodo Freelance Marketplace Template (Admin Panel)
+
+Author Email : info@GigToDoScript.com
+
+Template Url : http://www.gigtodo.com
+
+Version : 1.0
+
+*/
+
+/** General Styles **/
+
+.page-link{
+    
+  color:#000 !important;
+}
+
+.page-item.active .page-link{
+    
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+.make-black{
+    
+    color: #000 !important;
+}
+
+tbody td a {
+    
+    color: black !important;
+} 
+
+/** Dashboard Styling **/
+
+.huge {
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/** Links Table **/
+
+.links-table tbody tr:hover {
+    
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/** Popup bg button **/
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    
+    background-color: #28a745 !important;
+}
+
+/** Forms Styles **/
+
+.form-text {
+	
+font-weight:500;
+
+margin-top:.50rem;
+	
+}
+
+.filter-form {
+	
+	background:#e9ecef;
+	
+	border-radius:5px;
+	
+}
+
+
+/*** Footer Layout Styles ***/
+
+
+.border-right {
+	
+	border-right:1px solid #e6e6e6;
+	
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    
+    background-color: #28a745 !important;
+}
+
+/*** Messages Styles ***/
+
+
+.message-div {
+	
+	border:1px solid #e6e6e6;
+
+	padding:12px 20px 10px 20px;
+	
+
+}
+
+.red {
+    
+    background-color: red !important;
+}
+
+	
+.message-div .message-image {
+	
+	float:left;
+	
+	width:45px;
+	
+	height:45px;
+
+	margin-right:12px;
+	
+	border-radius:50%;
+	
+	}
+
+	
+.message-div .message-desc {
+	
+	margin-left:56px;
+	
+}
+	
+.message-div .message-desc a {
+	
+	white-space:nowrap;
+
+	max-width:0px;
+	
+}
+
+
+.message-div .message-offer {
+	background:#fafafa;
+	border:1px solid #e5e5e5;
+	padding:12px 20px 20px 20px;
+	margin-bottom:6px;
+} 
+
+.message-div .message-offer .price{
+	font-size:36px;
+	color:#28a745;
+} 
+
+.message-div .message-offer p{
+	margin-bottom:8px;
+}
+
+
+
+
+
+	
+.border-box {
+	
+	border-right:1.5px solid #a5a5a5;
+	
+}	
+
+.border-box:last-child {
+	
+	border-right:0px;
+	
+}
+
+@media (max-width: 767px) {
+	
+	.border-box {
+		
+		border-right:0px;
+		
+		border-bottom:1.5px solid #a5a5a5;
+		
+		margin-bottom:3px;
+		
+	}
+	
+	.border-box:last-child {
+		
+	border-bottom:0px;	
+		
+	}
+	
+	
+}
+
+
+
+/*** Single Seller Styles ***/
+
+
+.seller-info {
+	
+	position:relative;
+	
+}
+
+
+
+.seller-info .seller-info-title {
+	
+	background:rgba(36, 27, 28, 0.9);
+	
+	bottom:10%;
+	
+	color:#fff;
+	
+	font-size:18px;
+	
+	left:0;
+	
+	letter-spacing:-1px;
+	
+	padding:9px 11px 9px;
+	
+	position:absolute;
+	
+	text-transform:uppercase;
+	
+	z-index:1;
+	
+}
+
+.seller-info .seller-info-inner {
+	
+	display:block;
+	
+}
+
+
+.seller-info .seller-info-type {
+	
+	background-color:#0088cc;
+	
+	border-radius:2px;
+	
+	display:inline-block;
+	
+	float:left;
+	
+	font-size:12px;
+	
+	font-weight:400;
+	
+	letter-spacing:0;
+	
+	margin:8px -2px -15px -2px;
+	
+	padding:2px 9px;
+	
+	text-transform:none;
+	
+}
+
+
+.box {
+	
+background:#fff;
+
+border:1px solid #e6e6e6;
+	
+box-sizing:border-box;
+
+margin:0 0 30px;
+	
+padding:15px;
+	
+}
+
+
+/** Single Order Page Styles **/
+
+
+.order-table thead tr {
+	
+background:#ccc;
+	
+	
+}
+
+.order-status-message {
+	
+text-align:center;	
+
+padding:25px 20px;
+
+	
+}
+
+
+/*** Insert User * Edit User Profile Page Styles ***/
+
+.note-frame.card{
+margin-bottom: 0.1rem;
+}
+
+.card-hr {
+	
+margin-top:1rem;
+margin-bottom:1rem;
+margin-left:-1.2rem;
+margin-right:-1.2rem;
+	
+}
+
+
+.password-strength-checker #meter_wrapper {
+	
+	border:1px solid gray;
+	width:202px;
+	height:25px;
+	border-radius:3px;
+}
+
+
+.password-strength-checker #meter {
+	
+	height:23px;
+	
+}
+
+.password-strength-checker #pass_type {
+	
+	font-size:15px;
+	margin-top:13px;
+	position:absolute;
+	top:0;
+	right:90px;
+	font-weight:bold;
+	color:black;
+	
+}
+
+
+@media (max-width: 580px){
+	
+	.password-strength-checker .input-group .input-group-addon:last-child{ 
+	
+	display:none;
+	
+	}
+	
+	
+	.password-strength-checker .input-group input {
+		
+		border-radius:3px !important;
+		
+	}
+	
+}
+
+
+
+
+.post_footer {
+    position:fixed;
+	bottom:0%;
+	left:-0%;
+	z-index:5000;
+	width:100%;
+    background: #141625;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 0;
+}
+
+
+

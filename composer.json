@@ -1,0 +1,16 @@
+{
+    "require": {
+        "stripe/stripe-php": "^7.45",
+        "paypal/rest-api-sdk-php": "*",
+        "opentok/opentok": "4.2.x",
+        "guzzlehttp/guzzle": "^6.3",
+        "yabacon/paystack-php": "^2.2",
+        "phpmailer/phpmailer": "^6.1",
+        "swiftmailer/swiftmailer": "6.0",
+        "aws/aws-sdk-php": "^3.133",
+        "mercadopago/dx-php": "^2.0",
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "twilio/sdk": "^6.10",
+        "cboden/ratchet": "^0.4.3"
+    }
+}

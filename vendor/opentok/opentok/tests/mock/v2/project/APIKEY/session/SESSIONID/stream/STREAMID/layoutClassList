@@ -1,0 +1,6 @@
+{
+  "id":"STREAMID",
+  "videoType":"camera",
+  "name":"",
+  "layoutClassList":["foo","bar"]
+}

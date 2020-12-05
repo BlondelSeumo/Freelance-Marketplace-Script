@@ -1,0 +1,287 @@
+body{
+
+background-color: #F7F7F7;
+
+}
+
+#tabs{
+  border:1px solid #ccc;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  background-color: white;
+}
+
+#tabs .nav-tabs {
+  border-bottom: 0px;
+}
+
+#tabs .nav-tabs .nav-link:not(active) {
+  border: 0px solid transparent;
+  border-top: 4.2px solid transparent;
+  border-bottom: 4px solid transparent;
+  font-size: 15px;
+  padding: 0.9rem 1.5rem;
+  color: #999;
+}
+
+
+#tabs .nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+  border:0px;
+  border-bottom: 3px solid #28a745 !important;
+  color:black !important;
+  border-radius: 0px;
+}
+
+
+.breadcrumb {
+  background: none;
+  overflow: hidden;
+  border-radius: 5px;
+  counter-reset: flag; 
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  font-size: 15px;
+  line-height: 36px;
+  color: black;
+  padding: 0 10px 0 60px;
+  position: relative;
+}
+
+
+.breadcrumb a:first-child {
+  padding-left: 46px;
+  border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+  left: 14px;
+}
+.breadcrumb a:last-child {
+  border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+  padding-right: 20px;
+}
+
+.breadcrumb a:after {
+    content: '\f054';
+    font-family: "FontAwesome";
+    position: absolute;
+    right: -17px;
+    font-size: 13px;
+    right: -16px;
+    width: 15px;
+    top: 2px;
+    height: 15px;
+    z-index: 1;   
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+  content: none;
+}
+/*we will use the :before element to show numbers*/
+
+.breadcrumb a:before {
+  color: white;
+  text-align: center;
+  content: counter(flag);
+  counter-increment: flag;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 8px 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  background: #28a745;
+  font-size: 14px;
+}
+
+.breadcrumb a.active:before {
+
+  background: black;
+
+}
+
+.proposal-form .form-group{
+
+  margin-bottom: 20px;
+
+}
+
+.proposal-form .form-control,
+.table .form-control {
+
+  border-radius: 0px;
+
+}
+
+.proposal-form textarea[name="proposal_title"]{
+
+  font-size: 20px;
+
+}
+
+.proposal-form .form-group .col-md-3 {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.table .form-control {
+
+border:0px;
+font-size: 14px;
+resize: none;
+
+}
+
+.table .form-control:focus {
+  border-color: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.table th,
+.table td{
+font-size: 14px;
+vertical-align: inherit !important;
+font-weight: normal !important;
+color: #62646a !important;
+}
+
+.table thead tr{
+
+background: #F7F7F7;
+
+}
+
+.table thead tr th {
+font-family: "Graphik Webfont", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica", Arial, sans-serif;
+}
+
+.table tbody tr td:first-child{
+  width: 150px;
+  background: #F7F7F7;
+
+}
+
+.table .delete-attribute{
+    cursor: pointer;
+    position: absolute;
+    display: -webkit-box;
+    margin-top: -22px;
+    margin-left: 193px;
+    color: black;
+}
+
+
+.table .form-control:focus+i {
+
+display: none;
+
+}
+
+.proposal-form .requirements {
+
+  background: #F7F7F7;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+}
+
+.line-height-normal{
+
+  line-height: 1.7;
+
+}
+
+.gallery .pic {
+    margin-top: 11px;
+    width: 100%;
+    border:1px solid #ccc;
+    align-self: center;
+    text-align: center;
+    padding: 22px 0;
+    /*text-transform: uppercase;*/
+    color: #848EA1;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.gallery .img {
+    margin-top: 11px;
+    width: 100%;
+    border:1px solid #ccc;
+    color: #848EA1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+.gallery .img:nth-child(3n) {
+  margin-right: 0;
+}
+.gallery .img span {
+  display: none;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.gallery .img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  transition: opacity .1s ease-in;
+  border-radius: 4px;
+  opacity: 0;
+  position: absolute;
+}
+.gallery .img:hover::after {
+  display: block;
+  background-color: #000;
+  opacity: .5;
+}
+.gallery .img:hover span {
+  display: block;
+  position: relative;
+  left: -75px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.gallery .img:hover img {
+  position: relative;
+  left: 29px;
+}
+
+.gallery .pic .fa-trash{
+  /*cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  margin-top: -60px;
+  margin-left: 60px;
+  left: 710px;*/
+
+  margin-right: 22px;
+  position: relative;
+  float: right;
+  margin-top: -52px;
+
+}
+
+@media(max-width: 767px){
+  .proposal-form .form-group .col-md-3 {
+    text-align: left;
+    padding-top: 0px;
+    margin-bottom: 5px;
+  }
+}
